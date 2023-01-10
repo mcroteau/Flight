@@ -1,0 +1,19 @@
+const Decimal BASE_COMMISSION = 0.09;
+
+
+class Item {
+    Digit id;
+    Decimal price;
+}
+
+class Cart {
+    Digit id;
+    Digit timeCreated;
+    Collection[Item] items;
+}
+
+class CartItem {
+    Digit itemId;
+    Digit cartId;
+}
+

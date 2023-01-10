@@ -1,0 +1,25 @@
+location net.giga;
+
+using net.giga.CalculatorContract;
+
+object BasicCalculator : CalculatorContract {
+
+    Decimal BASE_COMMISSION = 0.01;
+    Decimal MODIFIER = 0.03;
+
+    Decimal commission;
+    Decimal modifiedPrice;
+
+    event calculate(a Decimal, b : Decimal) : Decimal {
+         output a + b;
+    }
+
+    action calculateCommission(output Decimal) : Decimal {
+        self.commission = self.BASE_COMMISSION * output;
+    }
+
+    action calculateModifiedPrice(output Decimal) : Decimal {
+        self.modifiedPrice = self.MODIFIER * output;
+    }
+}
+

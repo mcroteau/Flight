@@ -5,9 +5,10 @@
     A new syntax and programming language written in C++ 3:21am 10 Jan 2023
 */
 
+
 Flight
 
-object Vehicle{
+class Vehicle{
     Void:
     Digit id;
     Decimal price;

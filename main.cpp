@@ -17,7 +17,7 @@ int main(){
 
     cout << "hi";
 
-    ifstream sources("sandbox");
+    ifstream sources("source");
 
 
     const std::filesystem::path sandbox{"output"};
@@ -36,5 +36,5 @@ int main(){
 
 
     // cleanup
-    fs::remove_all("sandbox");
+    fs::remove_all("source");
 }

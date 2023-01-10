@@ -1,0 +1,19 @@
+const S BASE_COMMISSION = 0.09;
+
+@Handler
+class ItemHandler {
+
+    constructor ItemHandler(ItemRepo itemRepo){
+       self.itemRepo = itemRepo;
+    }
+
+    @Get[route="/items/{id}"]
+    action items(@Variable Digit id,
+                        HttpRequest req,
+                        Cache cache) : String {
+        Collection[Item] items = itemRepo.list(id);
+        Map[Text, ?] cache = new Map();
+        cache.set("items", items);
+    }
+
+}

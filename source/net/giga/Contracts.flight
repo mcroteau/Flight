@@ -1,0 +1,7 @@
+contract Event {
+    init() : Void;
+}
+
+contract Calculator {
+    calculate(a Decimal, b Decimal) : Decimal;
+}

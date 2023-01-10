@@ -61,6 +61,18 @@ build CMakeFiles/flight_lang.dir/meta_object.cpp.o: CXX_COMPILER__flight_lang_De
   OBJECT_DIR = CMakeFiles/flight_lang.dir
   OBJECT_FILE_DIR = CMakeFiles/flight_lang.dir
 
+build CMakeFiles/flight_lang.dir/method_object.cpp.o: CXX_COMPILER__flight_lang_Debug /home/mcroteau/Dev/effort/flight/method_object.cpp || cmake_object_order_depends_target_flight_lang
+  DEP_FILE = CMakeFiles/flight_lang.dir/method_object.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++2a
+  OBJECT_DIR = CMakeFiles/flight_lang.dir
+  OBJECT_FILE_DIR = CMakeFiles/flight_lang.dir
+
+build CMakeFiles/flight_lang.dir/variable_definition.cpp.o: CXX_COMPILER__flight_lang_Debug /home/mcroteau/Dev/effort/flight/variable_definition.cpp || cmake_object_order_depends_target_flight_lang
+  DEP_FILE = CMakeFiles/flight_lang.dir/variable_definition.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++2a
+  OBJECT_DIR = CMakeFiles/flight_lang.dir
+  OBJECT_FILE_DIR = CMakeFiles/flight_lang.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target flight_lang
@@ -69,7 +81,7 @@ build CMakeFiles/flight_lang.dir/meta_object.cpp.o: CXX_COMPILER__flight_lang_De
 #############################################
 # Link the executable flight_lang
 
-build flight_lang: CXX_EXECUTABLE_LINKER__flight_lang_Debug CMakeFiles/flight_lang.dir/main.cpp.o CMakeFiles/flight_lang.dir/meta_object.cpp.o
+build flight_lang: CXX_EXECUTABLE_LINKER__flight_lang_Debug CMakeFiles/flight_lang.dir/main.cpp.o CMakeFiles/flight_lang.dir/meta_object.cpp.o CMakeFiles/flight_lang.dir/method_object.cpp.o CMakeFiles/flight_lang.dir/variable_definition.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/flight_lang.dir
   POST_BUILD = :

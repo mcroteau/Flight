@@ -3,4 +3,4 @@ project(flight_lang)
 
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(flight_lang main.cpp meta_object.cpp)
+add_executable(flight_lang main.cpp meta_object.cpp method_object.cpp variable_definition.cpp variable_definition.h)

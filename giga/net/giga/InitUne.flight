@@ -1,0 +1,20 @@
+/**
+    10 January 2023 5:12am
+    Copyright Mike Croteau
+
+    A new syntax and programming language written in C++
+*/
+
+location net.giga;
+
+using net.giga.Calculator;
+using net.giga.BasicCalculator;
+
+apply prices;
+
+entry Init{
+    action main(Collection[Text] arguments) : Void {
+        Sys.out("init.");
+    }
+}
+

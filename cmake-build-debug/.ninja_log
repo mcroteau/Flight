@@ -1,0 +1,6 @@
+# ninja log v5
+1074	1164	1673345302389044582	flight_lang	f8decd9fee50e235
+1	1074	1673345302297041948	CMakeFiles/flight_lang.dir/main.cpp.o	7895529d3994b7a6
+1	539	1673345068590443466	CMakeFiles/flight_lang.dir/meta_object.cpp.o	c4dfedbd3f4e3f7f
+2	531	1673345578369038645	CMakeFiles/flight_lang.dir/meta_object.cpp.o	c4dfedbd3f4e3f7f
+531	629	1673345578465041453	flight_lang	f8decd9fee50e235

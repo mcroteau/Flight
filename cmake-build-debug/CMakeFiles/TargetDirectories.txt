@@ -1,0 +1,3 @@
+/home/mcroteau/Dev/effort/flight/cmake-build-debug/CMakeFiles/flight_lang.dir
+/home/mcroteau/Dev/effort/flight/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/mcroteau/Dev/effort/flight/cmake-build-debug/CMakeFiles/rebuild_cache.dir

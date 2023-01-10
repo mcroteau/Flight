@@ -1,0 +1,86 @@
+Flight
+
+object Vehicle{
+    Void:
+    Digit id;
+    Decimal price;
+    Text type;
+    Collection passengers;
+    Map[Text, Person] seats;
+    Bool operational;
+}
+
+object Main {
+
+    @Get("/")
+    @Meta(title="todays a mess", description="it is a mess")
+    method main() {
+        Map<?, ?> genericMap = new Map();
+        genericMap.put(new Digit(1), new Auto("Audi"));
+
+        Auto truck = new Truck();
+        truck.type = "Toyota";
+        truck.price = 14000D;
+
+        Auto truckDeux = new Truck();
+        truckDeux.type = "Ford"
+        truckDeux.price = 14000D;
+
+        Event init = Init();
+        init.execute("init.");
+
+        Collection prices = new Collection()[ 6.80, 2.30, 9.30 ];
+        Digit total = new Digit(345);
+
+        EachOutput result = prices.each(sum(total, it)->average(total, prices.base)]);
+        Sys.out("avg : " + result.get("average"));
+
+        Digit average = result.get("average") as Digit
+
+        Digit total = Digit();
+        for(Digit price : prices){
+             total += price;
+        }
+        Sys.out("total : " + total);
+
+        Map[Text, Auto] autos = Map();
+        map.set(truck.title, truck);
+        map.set(truckDeux.title, truckDeux);
+    }
+
+    method sum(Digit total, Digit price) : Void {
+        output total += price;
+    }
+
+    method average(Decimal total, Digit size) : Precision {
+        return total.divide(Precision(size));
+    }
+
+    method mean(Collection[Text, Decimal] prices) : Digit {
+
+    }
+}
+
+
+asdajslda
+
+iterate over byte array
+read each byte array
+interpret line
+	if object instantiation, add to map of objects
+	if variable assignment add to map of variables
+	if variable activity, perform action, store value to map of variables
+	if function object instantiation set return type, perform function set value check value type
+	if while
+
+read string class file
+	iterate over lines
+	determine if method and has return type
+
+
+
+
+
+
+
+

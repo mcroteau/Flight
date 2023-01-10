@@ -1,2 +1,7 @@
+/**
+    10 January 2023 5:12am
+    Copyright Mike Croteau
 
+    A new syntax and programming language written in C++
+*/
 Collection[Decimal] prices = new Collection();

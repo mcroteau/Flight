@@ -19,7 +19,6 @@ int main(){
 
     ifstream sources("source");
 
-
     const std::filesystem::path sandbox{"output"};
     std::filesystem::create_directories(sandbox);
 

@@ -1,3 +1,10 @@
+/**
+    10 January 2023 5:12am
+    Copyright Mike Croteau
+
+    A new syntax and programming language written in C++
+*/
+
 location net.giga;
 
 using net.giga.Calculator;
@@ -7,12 +14,10 @@ apply prices;
 
 entry InitTrois {
     action main(Collection[Text] arguments) : Void {
-
         Calculator calculator = new BasicCalculator();
         calculator.calculate(23.00, 9.00).then(calculator:calculateCommission, calculator:modifyPrice);
         Sys.out(calculator.commission);
         Sys.out(calculator.modifiedPrice);
-
         prices.add(calculator.modifiedPrice);
 
     }

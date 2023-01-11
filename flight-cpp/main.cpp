@@ -15,8 +15,6 @@ class action_respository {
 template <typename T>
 map<T, T> vars;
 
-const string pre = "../";
-
 void iterate_directory(string dir, string app_path){
     for (auto entry : fs::directory_iterator{dir}){
         if(entry.is_directory()){
@@ -28,14 +26,18 @@ void iterate_directory(string dir, string app_path){
             std::cout << app_path_size << '\n';
 
             path.erase(0, app_path_size + 1);
-            string source_path = pre + path;
-            std::cout << source_path << '\n';
+            std::cout << path << '\n';
 
             ifstream source_file;
-            source_file.open(source_path,ios::out);cout << '.';
+            source_file.open(path,ios::out);cout << '.';
             if (source_file.is_open()){   //checking whether the file is open
                 string source_line_element;
                 while(getline(source_file, source_line_element)){
+
+                    if(source_line_element.){
+
+                    }
+
                     cout << '.';//read data from file object and put it into string.
                     std::string::iterator end_pos = std::remove(source_line_element.begin(), source_line_element.end(), ' ');
                     source_line_element.erase(end_pos, source_line_element.end());
@@ -63,9 +65,6 @@ int main(){
     string path = app_path + "/basic";
     iterate_directory(path, app_path );
 
-
-    // create files of different kinds
-    fs::create_directory("output");
 
 }
 

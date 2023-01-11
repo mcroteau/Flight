@@ -1,0 +1,9 @@
+# ninja log v5
+2	828	1673373772783432468	CMakeFiles/flight_lang.dir/variable_definition.cpp.o	139812ac8fb161d5
+2642	2884	1673374563144256898	flight_lang	3c639bc0c60487c8
+1	2642	1673374562908251556	CMakeFiles/flight_lang.dir/main.cpp.o	7895529d3994b7a6
+829	1366	1673373773319442677	CMakeFiles/flight_lang.dir/meta_object.cpp.o	c4dfedbd3f4e3f7f
+0	34	1673427539170545074	build.ninja	59d13988f212aa0e
+1	858	1673373772811433001	CMakeFiles/flight_lang.dir/method_object.cpp.o	fa573733312e9187
+1	1503	1673427856856387113	CMakeFiles/flight_lang.dir/main.cpp.o	7895529d3994b7a6
+1504	1622	1673427856972390707	flight_lang	3c639bc0c60487c8

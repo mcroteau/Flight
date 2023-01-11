@@ -1,4 +1,0 @@
-/home/mcroteau/Dev/clion-2022.3.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/mcroteau/Dev/clion-2022.3.1/bin/ninja/linux/ninja -G Ninja -S /home/mcroteau/Dev/effort/flight -B /home/mcroteau/Dev/effort/flight/cmake-build-debug
--- Configuring done
--- Generating done
--- Build files have been written to: /home/mcroteau/Dev/effort/flight/cmake-build-debug
